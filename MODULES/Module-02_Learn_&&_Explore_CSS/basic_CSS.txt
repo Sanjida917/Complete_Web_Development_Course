@@ -1,0 +1,185 @@
+
+CSS - Cascading Style Sheets
+
+🧠 What Does "Cascading" Mean?
+Think of CSS rules as instructions for styling elements on a webpage. Sometimes, multiple rules might apply to the same element, and they might conflict. The "cascade" is the process the browser uses to determine which rule takes precedence.
+
+🔑 How the Cascade Works ?
+The browser considers several factors to resolve conflicts:
+
+1. Importance: Rules marked with !important have the highest priority.
+
+2. Origin: Styles can come from different sources:
+> Browser default styles
+> User-defined styles
+> Author styles (your CSS)
+
+Author styles generally override user and browser styles, unless !important is used.
+
+3. Specificity: More specific selectors take precedence over less specific ones. For example:
+> An ID selector (#id) is more specific than a class selector (.class).
+> A class selector is more specific than a tag selector (div).
+
+4. Source Order: If two rules have the same specificity, the one that appears last in the CSS file will be applied.
+
+🧪 Example
+Consider the following HTML and CSS:
+
+html:
+<h1 class="title" id="main-title" style="color: green;">Hello, World!</h1>
+
+css:
+/* External CSS */
+h1 {
+  color: red;
+}
+
+.title {
+  color: blue;
+}
+
+#main-title {
+  color: orange;
+}
+
+In this example:
+--> The inline style (style="color: green;") has the highest specificity and will be applied, making the text green.
+GCFGlobal.org
+
+--> If the inline style is removed, the ID selector (#main-title) will take precedence over the class (.title) and tag (h1) selectors, making the text orange.
+
+🧭 Summary
+The "cascading" in CSS ensures that when multiple rules apply to the same element, the browser can determine which one to use based on importance, origin, specificity, and source order. This system allows for flexible and manageable styling of web pages.
+
+
+
+Types of CSS :
+CSS (Cascading Style Sheets) can be applied to HTML documents in three primary ways: Inline, Internal, and External. Here's a simple explanation of each:
+
+1. Inline CSS
+● What it is: Styles applied directly within an HTML element using the style attribute.
+● Use case: Ideal for quick, one-off style changes to individual elements.
+● Example:
+html :
+  <p style="color: red;">This is a red paragraph.</p>
+
+
+
+2. Internal CSS
+● What it is: Styles defined within a <style> tag inside the <head> section of an HTML document.
+● Use case: Suitable for styling a single page with unique styles.
+● Example:
+html
+
+  <head>
+    <style>
+      p {
+        color: blue;
+      }
+    </style>
+  </head>  
+
+
+
+3. External CSS
+● What it is: Styles written in a separate .css file and linked to the HTML document using a <link> tag.
+● Use case: Best for applying consistent styles across multiple pages.
+● Example:
+html
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+
+🧠 Priority Order (Specificity)
+When multiple CSS rules apply to the same element, the browser determines which one to use based on the following order of precedence:
+
+1) Inline CSS: Highest priority.
+
+2) Internal/embedded CSS: Overrides external CSS if both apply to the same element.
+
+3) External CSS: Lowest priority.
+
+This means that if an element has conflicting styles from different sources, the inline style will be applied.
+
+
+
+🎯 What Are CSS Selectors?
+CSS selectors are patterns used to select the elements you want to style in your HTML document. Think of them as a way to tell the browser, "Hey, I want to style this specific part of the page."
+
+
+🔹 Basic CSS Selectors
+
+•🔸 Element Selector : Selects all elements of a specific type.
+
+Example: 
+p {
+  color: blue;
+}
+
+This will make all <p> (paragraph) elements have blue text.
+
+•🔸 ID Selector : Selects a single element with a specific id.
+
+Example : 
+#header {
+  background-color: gray;
+}
+
+This targets the element with id="header".
+
+•🔸 Class Selector : Selects all elements with a specific class.
+
+Example : 
+
+.menu {
+  font-size: 16px;
+}
+
+This applies to all elements with class="menu".
+
+•🔸 Universal Selector : Selects all elements on the page.
+
+Example : 
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+This resets margin and padding for all elements.
+
+•🔸 Group Selector : Applies the same styles to multiple selectors.
+
+Example : 
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+This sets the same font for all heading levels.
+
+•🔸 Attribute Selector (Advanced CSS Selectors) : Targets elements based on their attributes.
+
+Example :
+
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+
+
+🧱 What is the CSS Box Model?
+In web design, every HTML element is treated as a rectangular box. The CSS Box Model describes how these boxes are structured and how they interact with each other on a webpage.
+
+Each box consists of four main parts:
+
+Content: This is where your text, images, or other content appear. It's the innermost part of the box.
+
+Padding: This is the space between the content and the border. Padding adds space inside the element, pushing the border away from the content.
+
+Border: A line that wraps around the padding and content. It defines the edge of the element.
+
+Margin: This is the space outside the border. Margins create space between the element and its neighboring elements.
