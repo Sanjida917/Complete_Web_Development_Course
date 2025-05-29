@@ -1,0 +1,178 @@
+ 
+1. What is HTML ?
+Hyper(H) --> Reference/Link
+Text(T) --> Data/Information
+Markup(M) --> Predefined/Marked
+Language(L) -->Communication
+
+
+HTML Structure :
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta> </meta>
+    <title> </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+2.HTML tags:
+1) <p> -> paragraph tag
+2) <b> -> bold(just style) tag
+3) <strong> -> bold(important/semantic/meaningful) tag
+4) <i> -> italic tag
+5) <em> -> emphasis(important/meaningful) tag
+6) <h1> - <h6> -> heading tag
+7) <small> -> small text tag
+8) <div> -> division tag
+9) <li> -> list tag
+10) <ul> -> unordered list tag
+11) <ol> -> ordered list tag
+12) <br> -> break tag
+13) <button> -> button tag
+14) <a href=""> -> anchor tag
+15) <img src=""> -> image tag
+16) <input type=""> -> input tag
+17) <select> -> select tag
+18) <option value= ""> -> option tag
+19) <form> -> form tag
+
+3. What is Inline and Block element?
+🧵 Inline Elements
+1.Do not start on a new line: They appear on the same line as surrounding content.
+2.Think of inline elements like small pieces inside a sentence.
+3.They do not start a new line.
+4.They only take up as much space as they need.
+5.You can’t put block elements inside them.
+
+
+Examples:
+<span> — used for styling part of text
+<a> — link
+<strong> or <b> — bold
+<em> or <i> — italic
+<img> — image
+
+
+
+🧱Block Elements
+* Think of block elements like big boxes.
+* Each one starts on a new line.
+* They take up the full width of the screen (even if they don’t need it).
+* You can put other elements inside them, including other blocks or inline things.
+
+Examples:
+<div> — like a container box
+<p> — paragraph
+<h1> to <h6> — headings
+<ul>, <li> — lists
+
+
+4. What about ordered and unordered list?
+📋 HTML Lists — Ordered vs Unordered
+🔢 Ordered List (<ol>)
+
+● It’s a numbered list.
+● Use it when order matters (like steps in a recipe).
+
+Example:
+<ol>
+  <li>Wake up</li>
+  <li>Brush your teeth</li>
+  <li>Eat breakfast</li>
+</ol>
+
+
+🔘 Unordered List (<ul>)
+
+● It’s a bulleted list (●).
+● Use it when order doesn't matter (like a shopping list).
+
+Example:
+<ul>
+  <li>Milk</li>
+  <li>Eggs</li>
+  <li>Bread</li>
+</ul>
+
+
+
+5. What Is an Anchor Tag in HTML?
+The <a> tag is used to create hyperlinks — clickable links that take you somewhere else when you click them.
+
+Basic Syntax:
+<a href="URL">Link Text</a>
+
+-> <a> = anchor tag
+-> href = attribute that holds the destination URL
+-> Link Text = the text users will click
+
+
+Types of Anchor Links: 
+1. 🌐 Link to another website
+ -> <a href="https://www.google.com">Go to Google</a>
+
+2. 📁 Link to another page on your site
+ -> <a href="about.html">About Us</a>
+
+3. 🧭 Link to a specific section on the same 
+ -> <a href="#contact">Go to Contact</a>
+
+4. 📧 Link to send an email
+ -> <a href="mailto:someone@example.com">Email Us</a>
+
+🪟 Open link in a new tab
+ -> <a href="https://example.com" target="_blank">Open in new tab</a>
+
+👉 Adds target="_blank" to open in a new browser tab.
+
+
+🧲 You can also use the <a> tag to let users download files instead of opening them in the browser.
+
+Syntax: 
+<a href="file.pdf" download>Download PDF</a>
+
+
+Explanation anchor <a> tag : <a href="URL">Link Text</a>
+  --> <a> — the anchor tag(Defines a hyperlink)
+  --> href — (Hypertext reference) the address (URL) where the link goes.
+  --> Link Text — the clickable text the user sees
+
+
+6. What is the <img> Tag?
+
+-> The <img> tag is used to show images in a web page.
+-> It is a self-closing tag (doesn’t need </img>)
+
+-> It uses attributes to tell the browser which image to show and how.
+
+
+Basic Structure :
+<img src="image.jpg" alt="Description of image">
+
+1.src	Source: the path to the image file (required)
+2.alt	Alternative text: shows if image fails to load or for screen readers (optional but important)
+
+
+# Other optional attributes control the size or appearance, like:
+
+* width and height to set the size
+* title to show a tooltip when hovering over the image
+
+
+7. 📝 What is a Comment in HTML?
+A comment is a note you write inside your HTML code. It does not show up on the webpage. Comments are used to leave messages or explanations for yourself or other developers.
+
+How to write a comment:
+<!-- This is a comment -->
+
+
+8. ✂️ What is the <span> Tag?
+The <span> tag is an inline container used to group small parts of text or other inline elements.It does not change the appearance by itself. Mainly used to apply styles or scripts to a specific part of text.
+
+Example:
+<p>This is a <span style="color: red;">red</span> word.</p>
