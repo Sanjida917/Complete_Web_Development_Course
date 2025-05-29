@@ -1,0 +1,18 @@
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(51, 89, 90);
+}
+
+
+div{
+
+    background-color: rgb(154, 206, 208);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    padding: 30px;
+    line-height: 28px;
+}
