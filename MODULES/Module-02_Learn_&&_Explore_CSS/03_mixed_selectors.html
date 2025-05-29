@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selectors</title>  
+    <!--
+
+    * Default font-size is 16px 
+    * One Class can be use for several items and we can use several classes for one items but The Id should be only once for both situations
+    -->
+
+
+
+    <style>
+
+        .css{
+
+            color: aqua;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        input[type=password]{
+
+            font-size: 30px;
+        }
+
+        /* This is comments*/
+
+        *{
+            margin: 0; 
+        }
+
+        .yellow,.holud{
+            background-color: rgb(234, 234,140);
+        }
+
+        .bold{
+
+            font-weight: 800;
+        }
+
+        #fifth,li{
+
+            font-size: 25px;
+            color: rgb(93, 91, 91);
+        }
+
+           /* p{
+            color: chocolate;
+            
+        }*/
+
+        .vlog{
+
+            background-color: blanchedalmond;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <h4>Explore Mixed Selectors</h4>
+    <p>My <span class="css">First line CSS</span></p>
+    <p class="yellow">My Second line CSS</p>
+    <p>My Third line CSS</p>
+    <p class="yellow bold">My Fourth line CSS</p>
+    <p id="fifth">My Fifth line CSS</p>
+    <p>My Sixth line CSS</p>
+    <p class="holud">My Seventh line CSS</p>
+
+
+    <ol>
+        <li>Element Selector</li>
+        <li>ID Selector</li>
+        <li>Class Selector</li>
+        <li class="holud">Universal Selector</li>
+        <li>Grouping Selector</li>
+        <li>Attribute Selector</li>
+    </ol>
+
+
+    <div class="vlog">
+
+        <h3>My vlog</h3>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+        <br>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <br>
+
+
+        <p>
+             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        </p>
+
+    </div>
+    
+
+    <form action="">
+
+        <input type="text">
+        <input type="password" name="" id="">
+
+    </form>
+
+
+</body>
+</html>

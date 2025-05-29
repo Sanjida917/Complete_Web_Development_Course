@@ -1,0 +1,125 @@
+
+<!-- Here I cleared about All the selectors -->
+<!-- ID Selector, Class selector, Element Selector, Universal Selector, Grouping Selector, Attribute Selector -->
+ 
+<! DOCTYPE html>         
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Basic CSS</title>
+
+            <!-- (*) This is called universal selector, which works for all of the content -->
+            <!-- (button,h4,footer) This is called grouping selector, which works on all of the selective tag content -->
+            <!-- (input[type="submit"],input[required],label,input) This are called attribute selector, which works on all of the selective attributes content -->
+    <style>
+
+        
+        *{  
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .colon{
+            text-align: right;
+        }
+
+        #color{
+            color:rgba(222, 77, 19, 0.687);
+            text-align: center;
+        }
+
+        #embedded{
+            font-size: larger;
+            font-style: oblique;
+            font-weight: bolder;
+        }
+
+        #inline{
+            font-size: large;
+        }
+
+    li{
+            color:peru;
+        }
+    
+    p{
+            background-color:cornsilk;
+        }
+
+    button,h4,footer{
+
+      font-weight: bolder;
+      text-align: center;
+      color: rebeccapurple;
+      margin-bottom: 10px;
+      padding: 5px;
+      
+      
+    }    
+
+
+    label{
+
+        background-color:bisque;
+        margin-right: 10px;
+    }
+
+    input{
+
+        border-color:gold;
+        border-width: 0.5cap;
+    }
+
+    input[required]{
+        
+        background-color:cadetblue;
+    }
+
+    input[type="submit"]{
+
+        background-color:rosybrown;
+        color: blue;
+        font-weight: bolder;
+        margin-left: 5px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    
+    <h3 style="color:chocolate;">Learning Basic CSS</h3>
+    <p>Cascading Style Sheet</p>
+    <ul>
+        <li id="inline">Inline</li>
+        <li id="embedded">Internal/Embedded</li>
+        <li>External</li>
+    </ul>
+
+
+    <h4 style="background-color:aquamarine;">Inline CSS</h4>
+    <p id="color">Style is colorful</p>
+    <p class="colon">Need style rule and value separated by colon(:) </p>
+    <p class="colon">After each style you need to use semi-colon(:) </p>
+    <p>Now We are trying Internal styling</p>
+    
+    <p class="colon">Another demo for looking class selector.</p>
+
+    <footer>
+
+        <button>Click Me !!</button>
+
+
+        <!--Here is the example of attribute selector-->
+        <form>
+
+            <label for="name">Name : </label>
+            <input type="text" id="name" required>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </footer>
+</body>     
+</html>
