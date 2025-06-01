@@ -13,6 +13,21 @@
             margin-bottom: 10px;
         }
 
+        input[type=reset],[type=submit]{
+            background-color:rgb(156, 231, 206);
+            padding: 5px 8px;
+            font-weight: bolder;
+            font-size: medium;
+        }
+
+        textarea{
+            background-color: bisque;
+        }
+
+        input[type=text],[type=email]{
+            background-color:rgb(212, 211, 211)
+        }
+
     </style>
 </head>
 
@@ -35,6 +50,46 @@
         </label>
 
         <label for="phone">Your Phone : <input id="phone" type="text" placeholder="Your Phone "></label>
+
+
+        <fieldset>
+
+            <legend>Pick One Pithaa       </legend>
+
+            <label for="chitoi"><input type="radio" name="pitha" id="chitoi">Chitoi</label>
+
+            <label for="vapa">
+                <input type="radio" name="pitha" id="Vapa">Vapa
+            </label>
+
+            <label for="puri"><input type="radio" name="pitha" id="puri">Puri</label>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Pick One or More Vorta</legend>
+            <label for="sorisa">
+                <input type="checkbox" name="vorta" id="sorisa"> Sorisha
+            </label>
+            <label for="shutki">
+                <input type="checkbox" name="vorta" id="shutki"> Shutki
+            </label>
+
+            <label for="chili"> <input type="checkbox" name="vorta" id="chili">Chili</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Instruction </legend>
+            <textarea name="" id="" rows="4" cols="7"></textarea>
+
+        </fieldset>
+
+        <input style="margin-top: 10px;" type="reset" value="Reset">
+
+        <input type="submit" value="Submit">
+
+
 
     </form>
 </section>
